@@ -1,202 +1,295 @@
-🚚 LaneGuard AI – Supply Chain Risk Analytics
+# 🚢 LaneGuard AI – Supply Chain Shipment Risk Analytics
 
-**An interactive data analytics project for identifying, analyzing, and understanding supply chain shipment disruptions.**
+<p align="center">
+  <b>An Interactive Data Analytics Project for Understanding and Analyzing Supply Chain Shipment Disruptions</b>
+</p>
 
-LaneGuard AI transforms shipment data into meaningful business insights using SQL, Python, Power BI, and interactive visualizations. The project explores how transport modes, weather conditions, product categories, and geopolitical risks relate to shipment disruptions.
+<p align="center">
+  <a href="https://laneguard-ai-interactive-smrqkq4hk33qjl9r67ads4.streamlit.app/">🚀 Live Dashboard</a> |
+  <a href="https://github.com/omshinde-75/LaneGuard-AI-Interactive">💻 GitHub Repository</a> |
+  <a href="https://www.kaggle.com/datasets/nudratabbas/global-supply-chain-risk-and-logistics-2024-2026">📊 Dataset Source</a>
+</p>
 
 ---
 
 ## 📌 Project Overview
 
-Supply chains face several risks, including adverse weather, transportation challenges, fuel price changes, and geopolitical uncertainty.
+LaneGuard AI is an interactive supply chain risk analytics dashboard designed to analyze shipment disruptions and identify patterns across transportation modes, weather conditions, product categories, and geopolitical risk levels.
 
-LaneGuard AI analyzes shipment records to identify disruption patterns and help understand the factors associated with shipment delays and disruptions.
+The project transforms raw shipment data into meaningful business insights using Python, SQL, Excel, Power BI, and interactive data visualizations.
 
-The project includes data quality checks, SQL-based analysis, an interactive Power BI dashboard, and a Python-based Streamlit application.
+The dashboard allows users to explore shipment performance through dynamic filters, KPI metrics, and interactive charts.
+
+**The main objective is to understand shipment disruption patterns and help identify potential supply chain risk factors through data analysis.**
 
 ## 🎯 Project Objectives
 
 - Analyze shipment disruption patterns.
-- Identify disruption rates across different transport modes.
-- Understand the impact of weather conditions on shipments.
-- Compare disruption rates across product categories.
-- Analyze geopolitical risk levels and shipment disruptions.
-- Track monthly shipment disruption trends.
-- Present business insights through interactive dashboards.
+- Calculate total and disrupted shipments.
+- Compare disruption rates across transportation modes.
+- Understand the relationship between weather conditions and disruptions.
+- Analyze disruption rates across product categories.
+- Explore geopolitical risk levels and shipment disruptions.
+- Visualize monthly shipment disruption trends.
+- Build an interactive dashboard for business insights.
 
-## 📊 Dataset Information
+## 📊 Key Performance Indicators
 
-**Dataset:** Global Supply Chain Risk & Logistics 2024–2026  
-**Source:** Kaggle  
-**Total Records:** 5,000 shipments  
-**Data Format:** CSV
-
-Dataset source:
-
-[Global Supply Chain Risk & Logistics 2024–2026 – Kaggle](https://www.kaggle.com/datasets/nudratabbas/global-supply-chain-risk-and-logistics-2024-2026)
-
-### Important Dataset Columns
-
-| Column | Description |
-|---|---|
-| Shipment_ID | Unique shipment identifier |
-| Date | Shipment date |
-| Origin_Port | Shipment origin |
-| Destination_Port | Shipment destination |
-| Transport_Mode | Transportation method |
-| Product_Category | Product classification |
-| Distance_km | Shipment distance |
-| Weight_MT | Shipment weight |
-| Fuel_Price_Index | Fuel price indicator |
-| Geopolitical_Risk_Score | Geopolitical risk score |
-| Weather_Condition | Weather during shipment |
-| Carrier_Reliability_Score | Carrier reliability |
-| Lead_Time_Days | Shipment lead time |
-| Disruption_Occurred | Shipment disruption indicator |
-
-## 🛠️ Technology Stack
-
-| Technology | Purpose |
-|---|---|
-| Microsoft Excel | Data inspection and quality validation |
-| MySQL 8.0 | Data storage and management |
-| SQL | Data analysis and analytical views |
-| Power BI | Interactive business intelligence dashboard |
-| Python | Application development |
-| Pandas | Data processing |
-| Streamlit | Interactive web application |
-| Plotly | Data visualization |
-
-## 📈 Key Performance Indicators
-
-The project dataset contains 5,000 shipment records.
+The original dataset contains 5,000 shipment records.
 
 | KPI | Result |
 |---|---:|
 | Total Shipments | 5,000 |
 | Disrupted Shipments | 3,063 |
 | Non-Disrupted Shipments | 1,937 |
-| Disruption Rate | 61.26% |
+| Overall Disruption Rate | 61.26% |
 | Non-Disruption Rate | 38.74% |
 
-**Key observation:** 61.26% of the recorded shipments were marked as disrupted in the analyzed dataset.
+## 🖥️ Live Interactive Dashboard
 
-## 📊 Power BI Dashboard Features
+Explore the deployed dashboard:
 
-The Power BI dashboard provides an interactive view of shipment disruption patterns.
+**[🚀 Open LaneGuard AI Live Dashboard](https://laneguard-ai-interactive-smrqkq4hk33qjl9r67ads4.streamlit.app/)**
 
-### Dashboard Analysis
+### Dashboard Features
 
-1. **Monthly Shipment Disruption Trend** – Tracks shipment disruption rates over time.
-2. **Disruption Rate by Transport Mode** – Compares disruption rates across Air, Rail, Sea, and Road.
-3. **Disruption Rate by Weather Condition** – Analyzes disruption patterns across different weather conditions.
-4. **Disruption Rate by Product Category** – Compares disruption rates across product categories.
-5. **Disruption Rate by Geopolitical Risk** – Examines disruption rates across geopolitical risk bands.
-
-### Interactive Filters
-
-- Transport Mode
-- Weather Condition
-
-The dashboard updates its visuals and KPI values according to the selected filters.
-
-## 🗄️ SQL Analysis
-
-MySQL was used to store the shipment dataset and perform analytical queries.
-
-The SQL analysis included:
-
-- Total shipment count.
-- Disrupted and non-disrupted shipment counts.
-- Overall disruption rate.
-- Disruption rate by transport mode.
-- Disruption rate by weather condition.
-- Monthly disruption analysis.
+- Automatic dataset loading.
+- Interactive transport mode filters.
+- Weather condition filters.
+- Product category filters.
+- Dynamic KPI cards.
+- Transport mode disruption analysis.
+- Weather-based disruption analysis.
 - Product category risk analysis.
 - Geopolitical risk analysis.
+- Monthly shipment disruption trends.
+- Shipment data preview.
+- Download filtered shipment data as CSV.
 
-Analytical SQL views were also created to organize the results for dashboard reporting.
+## 📸 Dashboard Screenshots
 
-## 🐍 Python Application
+Screenshots of the project dashboard will be added here.
 
-A Streamlit application is included in this repository.
+Once screenshots are uploaded into the `screenshots/` folder, use:
 
-The application uses Python, Pandas, and Plotly for interactive shipment data analysis and visualization.
+```markdown
+![LaneGuard AI Dashboard](screenshots/dashboard-overview.png)
+```
 
-**Main application file:** `app.py`
+Additional screenshots can include:
 
-## 📁 Repository Structure
+- KPI overview
+- Transport mode analysis
+- Weather condition analysis
+- Product category analysis
+- Geopolitical risk analysis
+- Interactive filters
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Data processing and dashboard development |
+| Pandas | Data cleaning and manipulation |
+| Plotly | Interactive charts and visualizations |
+| Streamlit | Interactive web dashboard |
+| SQL / MySQL | Data storage and analytical queries |
+| Microsoft Excel | Data quality checks and validation |
+| Power BI | Business intelligence dashboard |
+| GitHub | Version control and project documentation |
+| Kaggle | Dataset source |
+
+## 📂 Dataset Information
+
+**Dataset:** Global Supply Chain Risk & Logistics 2024–2026
+
+**Source:** Kaggle
+
+[Download Dataset](https://www.kaggle.com/datasets/nudratabbas/global-supply-chain-risk-and-logistics-2024-2026)
+
+The dataset contains 5,000 shipment records and 14 columns.
+
+### Dataset Columns
+
+1. Shipment_ID
+2. Date
+3. Origin_Port
+4. Destination_Port
+5. Transport_Mode
+6. Product_Category
+7. Distance_km
+8. Weight_MT
+9. Fuel_Price_Index
+10. Geopolitical_Risk_Score
+11. Weather_Condition
+12. Carrier_Reliability_Score
+13. Lead_Time_Days
+14. Disruption_Occurred
+
+## 🔍 Data Analysis Performed
+
+### 1. Data Cleaning and Validation
+
+- Checked missing values.
+- Checked duplicate shipment IDs.
+- Validated shipment records.
+- Checked numerical columns and disruption labels.
+- Prepared data for analysis.
+
+### 2. SQL Analysis
+
+SQL was used to explore shipment disruption patterns.
+
+Key analytical areas:
+
+- Total shipment counts.
+- Disrupted versus non-disrupted shipments.
+- Disruption rates by transport mode.
+- Disruption rates by weather condition.
+- Monthly disruption trends.
+- Geopolitical risk analysis.
+- Product category comparisons.
+
+### 3. Power BI Dashboard
+
+Created a business intelligence dashboard containing:
+
+- KPI cards.
+- Monthly shipment disruption trend.
+- Transport mode risk comparison.
+- Weather condition analysis.
+- Product category disruption analysis.
+- Geopolitical risk analysis.
+- Interactive slicers.
+
+### 4. Python Interactive Dashboard
+
+Developed a Streamlit web application with:
+
+- Automatic CSV loading.
+- Interactive filters.
+- Dynamic KPI calculations.
+- Plotly visualizations.
+- Shipment data preview.
+- Filtered CSV export.
+
+## 📈 Key Insights
+
+Based on the overall dataset analysis:
+
+- Out of 5,000 shipments, 3,063 experienced disruptions.
+- The overall shipment disruption rate is 61.26%.
+- The dataset contains 1,937 non-disrupted shipments.
+- Transportation mode, weather, product category, and geopolitical risk provide different dimensions for analyzing shipment disruptions.
+- Interactive filtering makes it possible to investigate specific shipment groups.
+
+## ⚙️ Project Structure
 
 ```text
 LaneGuard-AI-Interactive/
 │
 ├── app.py
 │
+├── global_supply_chain_risk_2026.csv
+│
 ├── requirements.txt
 │
-└── README.md
+├── README.md
+│
+└── screenshots/
+    ├── dashboard-overview.png
+    ├── transport-analysis.png
+    ├── weather-analysis.png
+    ├── product-analysis.png
+    └── geopolitical-risk.png
 ```
+
+The screenshots folder is a planned addition; create it and upload your screenshots when available.
 
 ## 🚀 Run the Project Locally
 
-### 1. Clone the repository
+### Step 1: Clone the repository
 
 ```bash
 git clone https://github.com/omshinde-75/LaneGuard-AI-Interactive.git
 ```
 
-### 2. Open the project folder
+### Step 2: Open the project directory
 
 ```bash
 cd LaneGuard-AI-Interactive
 ```
 
-### 3. Install dependencies
+### Step 3: Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the Streamlit application
+### Step 4: Run the Streamlit application
 
 ```bash
 streamlit run app.py
 ```
 
-The application will open in your browser at the local Streamlit address.
+### Step 5: Open the local dashboard
 
-## 💡 Business Value
+Streamlit will provide a local URL, usually:
 
-LaneGuard AI demonstrates how data analytics can support supply chain risk analysis by:
+```text
+http://localhost:8501
+```
 
-- Highlighting shipment disruption patterns.
-- Comparing risk across transportation methods.
-- Identifying weather-related disruption patterns.
-- Understanding geopolitical risk categories.
-- Supporting data-driven operational decisions.
+## 📦 Requirements
 
-## 🔮 Future Improvements
+The project uses the following Python libraries:
 
-- Develop machine learning models to predict shipment disruption risk.
-- Add shipment-level risk scoring.
-- Introduce advanced filtering and drill-down analysis.
-- Add real-time shipment monitoring.
-- Improve the dashboard with additional business KPIs.
-- Deploy the application publicly.
+- Streamlit
+- Pandas
+- Plotly
+
+Install them using:
+
+```bash
+pip install streamlit pandas plotly
+```
+
+## 💡 Future Improvements
+
+- Add machine learning models for shipment disruption prediction.
+- Develop shipment risk scoring.
+- Add shipment delay prediction.
+- Integrate real-time weather information.
+- Add automated risk alerts.
+- Connect the dashboard to a live database.
+- Improve geographical shipment risk visualization.
+
+*These are planned improvements, not currently implemented features.*
+
+## ⚠️ Project Notes
+
+- This project is an analytics and visualization application, not a production shipment prediction system.
+- The current dashboard analyzes the provided dataset.
+- The dataset is sourced from Kaggle.
+- The project does not currently use a trained machine learning model.
+- The Power BI dashboard and Streamlit dashboard are separate deliverables.
 
 ## 👨‍💻 Author
 
 **Om Shinde**
 
-Computer Engineering Student | Aspiring Data Analyst
+BE Computer Engineering Student  
+Aspiring Data Analyst | Data Science Enthusiast
 
-GitHub: [omshinde-75](https://github.com/omshinde-75)
-
-LinkedIn: [Om Shinde](https://www.linkedin.com/in/om-rajendra-shinde)
+- GitHub: [@omshinde-75](https://github.com/omshinde-75)
+- LinkedIn: [Om Shinde](https://www.linkedin.com/in/om-rajendra-shinde/)
 
 ---
 
-⭐ If you find this project interesting, feel free to explore the repository and share your feedback.
+<p align="center">
+  <b>Built with Python, SQL, Power BI, Excel and Streamlit.</b>
+</p>
 
-**LaneGuard AI – Turning Supply Chain Data into Actionable Insights.**
-:::
+<p align="center">
+  🚢 Turning shipment data into meaningful supply chain insights.
+</p>
